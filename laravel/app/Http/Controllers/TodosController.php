@@ -17,7 +17,7 @@ class TodosController extends Controller
     public function home(){
         $allTodos = $this->todo->allTodo();
 
-        return view('layouts')->with('todos', $allTodos);
+        return view('home')->with('todos', $allTodos);
     }
 
     public function add_todo(TodoRequest $request){
